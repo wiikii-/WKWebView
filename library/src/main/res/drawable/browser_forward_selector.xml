@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="true" android:state_pressed="true" android:drawable="@drawable/browser_forward_pressed" />
+    <item android:state_enabled="false" android:drawable="@drawable/browser_forward_disabled" />
+    <item android:drawable="@drawable/browser_forward_normal" />
+</selector>

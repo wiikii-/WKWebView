@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="web_view_share_chooser_title">分享方式</string>
+</resources>
