@@ -210,6 +210,11 @@ public class WebViewActivity extends Activity {
 
     protected void initWebViewData() {
         this.mWebViewUrl = getIntent().getStringExtra(WEB_VIEW_DATA_URL);
+        if(!TextUtils.isEmpty(mWebViewUrl)) {
+            if(!mWebViewUrl.startsWith("http://")) {
+                mWebViewUrl = "http://" + mWebViewUrl;
+            }
+        }
         this.mWebViewData = getIntent().getStringExtra(WEB_VIEW_DATA_DATA);
         this.mWebViewTitle = getIntent().getStringExtra(WEB_VIEW_DATA_TITLE);
         this.mWebViewShowShare = getIntent().getBooleanExtra(WEB_VIEW_DATA_SHARE, false);
